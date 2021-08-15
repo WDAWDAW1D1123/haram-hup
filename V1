@@ -3,9 +3,13 @@ repeat
 until game:IsLoaded()
 
 local Venyx = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local Library = Venyx.new("Krypt")
-Library:setTheme("Glow", Color3.fromRGB(255, 0, 0))
-Library:setTheme("TextColor", Color3.fromRGB(255, 0, 0))
+local Library = Venyx.new("Haram Hup I By Mohammed.#9029")
+Background = Color3.fromRGB(24, 24, 24), 
+Glow = Color3.fromRGB(0, 0, 0), 
+Accent = Color3.fromRGB(10, 10, 10), 
+LightContrast = Color3.fromRGB(20, 20, 20), 
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
 
 local Skid = ""
 
@@ -4214,7 +4218,7 @@ Target:addButton("Cash", function()
 	notifSound.SoundId = "rbxassetid://170765130"
 	notifSound.PlayOnRemove = true
 	notifSound:Destroy()
-	game.StarterGui:SetCore("SendNotification", {Title = "Krypt", Text = game:GetService("Players")[Skid].Name.." has $"..game:GetService("Players")[Skid].DataFolder.Currency.Value, Icon = "rbxassetid://505845268", Duration = 15, Button1 = "Okay"})
+	game.StarterGui:SetCore("SendNotification", {Title = "Haram Hup", Text = game:GetService("Players")[Skid].Name.." has $"..game:GetService("Players")[Skid].DataFolder.Currency.Value, Icon = "rbxassetid://505845268", Duration = 15, Button1 = "Okay"})
 end)
 Target:addButton("Info", function()
 	print("------------------")
@@ -4352,7 +4356,7 @@ end)
 
 Library:SelectPage(Library.pages[1], true)
 
-Library:Notify("Krypt", "We have started! Thank you for using our service.")
+Library:Notify("Haram Hup", "We have started! Thank you for using our service.")
 
 local bind = Instance.new("BindableFunction")
 
@@ -4378,14 +4382,14 @@ function bind.OnInvoke(response)
 		end
 	else
 		game.StarterGui:SetCore("SendNotification", {
-			Title = "Krypt",
+			Title = "Haram Hup",
 			Text = "If you get banned, its not on us!",
 			Duration = 6.9
 		})
 	end
 end
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Krypt",
+	Title = "Haram Hup",
 	Text = "Morph yourself, wont affect your game. Prevents global bans.",
 	Duration = 3.4028235e+38,
 	Callback = bind,
